@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "lib": ["ESNext", "DOM"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "sourceMap": true,
+    "module": "commonjs",
+    "types": ["node", "jest"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "./build",
+    "inlineSources": true,
+    "jsx": "preserve",
+    "sourceRoot": "/"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/server/ui/**/*"]
+}

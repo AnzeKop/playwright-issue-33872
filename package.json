@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "fastify": "^5.1.0",
+    "playwright-chromium": "^1.49.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
