@@ -9,7 +9,8 @@ const fastify = Fastify({
 fastify.get("/", async function handler(request, reply) {
   const browserManager = await BrowserManager.getInstance();
   const randomId = crypto.randomUUID();
-  const context = await browserManager.getContext(randomId);
+  const browser = await browserManager.getBrowser();
+  const context = await browser.newContext();
   const page = await context.newPage();
 
   try {
@@ -37,9 +38,9 @@ fastify.get("/", async function handler(request, reply) {
       timestamp: new Date().toISOString(),
     };
   } catch (error) {
+    console.error("Error:", error);
     // Make sure to clean up even if there's an error
     await context.close();
-    throw error;
   }
 });
 

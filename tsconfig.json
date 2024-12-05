@@ -10,16 +10,16 @@
     "declaration": true,
     "sourceMap": true,
     "module": "commonjs",
-    "types": ["node", "jest"],
+    "types": ["node"],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
-    "rootDir": "./src",
+    "rootDir": "./",
     "outDir": "./build",
     "inlineSources": true,
     "jsx": "preserve",
     "sourceRoot": "/"
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["src/server/ui/**/*"]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
 }

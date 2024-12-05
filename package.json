@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js"
+  },
   "dependencies": {
     "fastify": "^5.1.0",
     "playwright-chromium": "^1.49.0"
